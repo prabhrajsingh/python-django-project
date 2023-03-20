@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>MPG</title>
+        <style>
+            body
+            {
+                background-image: url("https://images.unsplash.com/photo-1498887960847-2a5e46312788?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxleHBsb3JlLWZlZWR8MTl8fHxlbnwwfHx8fA%3D%3D&w=1000&q=80");
+                background-size:cover;
+                font-size:0.5cm;
+                color:white;
+                font-style: italic;
+                font-weight: bold;
+                font-family: monospace;
+                padding: 0.5%;
+            }
+        </style>
+    </head>
+    <body onload = >
+        <h1>ENTER THE DETAILS OF YOUR CAR : </h1>
+        <form method="POST" enctype="multipart/form-data" action = "predictMPG">{% csrf_token %}
+            <div>
+                <h2>
+                    CYLINDER : <input type = "number" name = "cylinderval" > </input><br><br>
+                    DISPLACEMENT : <input type = "number" name = "dispval" > </input><br><br>
+                    HORSEPOWER : <input type = "number" name = "hrspwrval" > </input><br><br>
+                    WEIGHT : <input type = "number" name = "wghtval" > </input><br><br>
+                    ACCELERATION : <input type = "number" name = "accval" > </input><br><br>
+                    MODEL YEAR : <input type = "number" name = "modelval" > </input><br><br>
+                    ORIGIN : <input type="number" name = "originval " > </input><br><br>
+                </h2>
+            </div><br>
+            <button type = 'submit' >SUBMIT</button>
+        </form>
+
+        {% if scoreval %}
+            <h1> THE PREDICTED 'MPG' COULD BE  : {{scoreval}}</h1>
+        {% endif %}
+    </body>
+</html>
