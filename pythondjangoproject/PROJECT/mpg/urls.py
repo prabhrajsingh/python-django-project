@@ -23,9 +23,7 @@ admin.site.site_header = 'BACKEND'
 admin.site.site_title = 'BACKEND PANEL'
 admin.site.index_title = 'WELCOME TO THE MANAGE PANEL'
 
-
 from . import views
-
 
 from details.views import (
     enterdetails,

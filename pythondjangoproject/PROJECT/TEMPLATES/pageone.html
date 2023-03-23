@@ -16,18 +16,18 @@
             }
         </style>
     </head>
-    <body onload = >
+    <body>
         <h1>ENTER THE DETAILS OF YOUR CAR : </h1>
         <form method="POST" enctype="multipart/form-data" action = "predictMPG">{% csrf_token %}
             <div>
                 <h2>
-                    CYLINDER : <input type = "number" name = "cylinderval" > </input><br><br>
-                    DISPLACEMENT : <input type = "number" name = "dispval" > </input><br><br>
-                    HORSEPOWER : <input type = "number" name = "hrspwrval" > </input><br><br>
-                    WEIGHT : <input type = "number" name = "wghtval" > </input><br><br>
-                    ACCELERATION : <input type = "number" name = "accval" > </input><br><br>
-                    MODEL YEAR : <input type = "number" name = "modelval" > </input><br><br>
-                    ORIGIN : <input type="number" name = "originval " > </input><br><br>
+                    CYLINDER : <input type = "number" name = "cylinderval" value = 0> </input><br><br>
+                    DISPLACEMENT : <input type = "number" name = "dispval" value = 0> </input><br><br>
+                    HORSEPOWER : <input type = "number" name = "hrspwrval" value = 0> </input><br><br>
+                    WEIGHT : <input type = "number" name = "wghtval" value = 0> </input><br><br>
+                    ACCELERATION : <input type = "number" name = "accval" value = 0> </input><br><br>
+                    MODEL YEAR : <input type = "number" name = "modelval" value = 0> </input><br><br>
+                    ORIGIN : <input type="number" name = "originval " value = 0> </input><br><br>
                 </h2>
             </div><br>
             <button type = 'submit' >SUBMIT</button>

@@ -26,5 +26,4 @@ def predictMPG(request):
     testData=pd.DataFrame({'x':temp2_dict}).transpose()
     scoreval = reloadModel.predict(testData)[0]
     context = {"scoreval" : scoreval}
-
     return render(request, 'pageone.html', context)
