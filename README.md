@@ -1,4 +1,4 @@
-MPG PREDICTION
+1) MPG PREDICTION
 
 A ML model hosted on a Django Server with the use of joblib library 
 The model predict the "MPG" which is miles per gallon of a car with the help of details provided by the user.
@@ -7,5 +7,6 @@ which further is hosted on a web framework django to use that model and instantl
 
 
 
-FACE AND EYE DETECTION 
+2) FACE AND EYE DETECTION 
+
 with the help of opencv and haarcascades xml files detects face and eye from the camera live feed
